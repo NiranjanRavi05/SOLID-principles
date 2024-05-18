@@ -1,4 +1,6 @@
 #include <iostream>
+#include "vector"
+
 using namespace std;
 
 typedef struct bookDetails{

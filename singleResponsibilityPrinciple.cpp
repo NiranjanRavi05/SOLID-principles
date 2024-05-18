@@ -1,4 +1,4 @@
-#include "solid.h"
+#include "srp.h"
 
 books::books(bookDetails book):book(){
     this->book.book=book.book;
@@ -13,10 +13,6 @@ customers::customers(customerDetails customer):customer(){
 }
 
 customers::~customers(){
-}
-
-void books::addBook(int bookCount){
-    bookCount+=1;
 }
 
 void books::printDetails() const{

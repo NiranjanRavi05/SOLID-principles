@@ -38,7 +38,7 @@ class fantasy: public bookGenre{
 private:
     books fantasyBook;
 public:
-    fantasy(bookDetails);
+    fantasy(books fantasyBook);
     void printInfo() const override;
 };
 
@@ -46,7 +46,7 @@ class adventure: public bookGenre{
 private:
     books adventureBook;
 public:
-    adventure(bookDetails);
+    adventure(books adventureBook);
     void printInfo() const override;
 };
 

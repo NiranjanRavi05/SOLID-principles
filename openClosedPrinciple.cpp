@@ -14,10 +14,10 @@ books::books(bookDetails book):book(book){
 books::~books(){
 }
 
-fantasy::fantasy(bookDetails book):fantasyBook(book){
+fantasy::fantasy(books fantasyBook):fantasyBook(fantasyBook){
 }
 
-adventure::adventure(bookDetails book):adventureBook(book){
+adventure::adventure(books adventureBook):adventureBook(adventureBook){
 }
 
 void fantasy::printInfo() const{

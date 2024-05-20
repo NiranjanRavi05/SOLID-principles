@@ -50,7 +50,32 @@ public:
     void printInfo() const override;
 };
 
+void books1::fantasyBook(bookDetails book) const {
+}
 
+void books1::adventureBook(bookDetails book) const {
+}
 
+books::books(bookDetails book) :book(book) {
+    this->book.book = book.book;
+    this->book.cost = book.cost;
+}
 
+books::~books() {
+}
 
+fantasy::fantasy(books fantasyBook) :fantasyBook(fantasyBook) {
+}
+
+adventure::adventure(books adventureBook) :adventureBook(adventureBook) {
+}
+
+void fantasy::printInfo() const {
+    cout << fantasyBook.book.book << endl;
+    cout << fantasyBook.book.cost << endl;
+}
+
+void adventure::printInfo() const {
+    cout << adventureBook.book.book << endl;
+    cout << adventureBook.book.cost << endl;
+}

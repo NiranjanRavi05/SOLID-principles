@@ -1,3 +1,6 @@
+#ifndef SRP_H
+#define SRP_H
+
 #include "solid.h"
 
 /************************************************************************/
@@ -15,7 +18,7 @@ private:
 /************************************************************************/
 class bookStore{
 public:
-    virtual void printDetails() const = 0;
+    virtual string printDetails() const = 0;
 };
 
 class books: public bookStore{
@@ -24,7 +27,7 @@ private:
 public:
     books(bookDetails book);
     ~books();
-    void printDetails() const override;
+    string printDetails() const override;
 };
 
 class customers: public bookStore{
@@ -33,5 +36,33 @@ private:
 public:
     customers(customerDetails customer);
     ~customers();
-    void printDetails() const override;
+    string printDetails() const override;
 };
+
+books::books(bookDetails book) :book() {
+    this->book.book = book.book;
+    this->book.cost = book.cost;
+}
+
+books::~books() {
+}
+
+customers::customers(customerDetails customer) :customer() {
+    this->customer.customerName = customer.customerName;
+}
+
+customers::~customers() {
+}
+
+string books::printDetails() const {
+    //cout << book.book << endl;
+    return this->book.book;
+}
+
+string customers::printDetails() const {
+    //cout << customer.customerName << endl;
+    return this->customer.customerName;
+}
+
+
+#endif SRP_H

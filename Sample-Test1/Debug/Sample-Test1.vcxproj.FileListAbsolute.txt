@@ -1,0 +1,4 @@
+C:\Users\niran\Source\Repos\NiranjanRavi05\SOLID-principles\Sample-Test1\Debug\Sample-Test1.vcxproj.CopyComplete
+C:\Users\niran\Source\Repos\NiranjanRavi05\SOLID-principles\Sample-Test1\Debug\Sample-Test1.exe
+C:\Users\niran\Source\Repos\NiranjanRavi05\SOLID-principles\Sample-Test1\Debug\gtest.pdb
+C:\Users\niran\Source\Repos\NiranjanRavi05\SOLID-principles\Sample-Test1\Debug\gtest_main.pdb
